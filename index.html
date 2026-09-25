@@ -2,160 +2,246 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nitya CSC</title>
-  <link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#075e54">
-
+<link rel="manifest" href="manifest.json">
+<title>Nitya CSC – Cyber Cafe Tools</title>
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  font-family:Arial,sans-serif;
-}
-
-body{
-  background:#f3f6fb;
-  color:#222;
-}
-
-header{
-  background:#075e54;
-  color:white;
-  padding:22px 15px;
-  text-align:center;
-}
-
-header h1{
-  font-size:28px;
-}
-
-header p{
-  margin-top:6px;
-  font-size:14px;
-}
-
-.container{
-  padding:18px;
-  max-width:600px;
-  margin:auto;
-}
-
-.section-title{
-  font-size:20px;
-  font-weight:bold;
-  margin:10px 0 15px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
-
-.card{
-  background:white;
-  padding:20px 10px;
-  border-radius:14px;
-  text-align:center;
-  text-decoration:none;
-  color:#222;
-  box-shadow:0 3px 10px rgba(0,0,0,.10);
-  transition:.2s;
-}
-
-.card:active{
-  transform:scale(.96);
-}
-
-.icon{
-  font-size:30px;
-  margin-bottom:8px;
-}
-
-.card b{
-  font-size:15px;
-}
-
-footer{
-  text-align:center;
-  padding:25px 10px;
-  color:#777;
-  font-size:13px;
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#f3f6fb;color:#202124}
+header{background:linear-gradient(135deg,#075e54,#0b806f);color:#fff;padding:22px 16px;border-radius:0 0 22px 22px}
+header h1{font-size:25px}
+header p{margin-top:6px;opacity:.9}
+.search{margin-top:16px;width:100%;padding:13px 15px;border:0;border-radius:12px;font-size:16px;outline:none}
+.container{padding:16px;max-width:900px;margin:auto}
+.notice{background:#fff3cd;border-left:5px solid #f0ad00;padding:12px;border-radius:10px;margin-bottom:16px;font-size:14px}
+.category{margin:20px 0 10px;font-size:19px;color:#075e54}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+.card{background:#fff;border-radius:15px;padding:15px;box-shadow:0 2px 8px #00000012;text-decoration:none;color:#222;display:block;transition:.15s}
+.card:active{transform:scale(.97)}
+.icon{font-size:28px;margin-bottom:8px}
+.card b{display:block;font-size:16px}
+.card span{font-size:12px;color:#666;display:block;margin-top:4px}
+footer{text-align:center;color:#777;font-size:12px;padding:25px 10px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(3,1fr)}}
+.hidden{display:none!important}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🖥️ Nitya CSC</h1>
-  <p>Digital Service & Online Work</p>
+<h1>🖥️ Nitya Cyber Cafe</h1>
+<p>CSC • Online Forms • Government Services • Digital Tools</p>
+<input id="search" class="search" placeholder="🔎 Tool खोजें...">
 </header>
 
 <div class="container">
 
-  <div class="section-title">Important Services</div>
+<div class="notice">
+⚠️ सरकारी सेवाओं के लिए संबंधित <b>official portal</b> ही खुलेगा।
+OTP, Aadhaar, PAN या password इस app में सेव न करें।
+</div>
 
-  <div class="grid">
+<h2 class="category">🆔 पहचान और दस्तावेज</h2>
+<div class="grid">
 
-    <a class="card" href="https://digitalseva.csc.gov.in/" target="_blank">
-      <div class="icon">🏢</div>
-      <b>CSC Portal</b>
-    </a>
+<a class="card" href="https://uidai.gov.in/" target="_blank">
+<div class="icon">🆔</div>
+<b>Aadhaar / UIDAI</b>
+<span>Download, update, status</span>
+</a>
 
-    <a class="card" href="https://myaadhaar.uidai.gov.in/" target="_blank">
-      <div class="icon">🪪</div>
-      <b>Aadhaar</b>
-    </a>
+<a class="card" href="https://www.incometax.gov.in/" target="_blank">
+<div class="icon">💳</div>
+<b>PAN / Income Tax</b>
+<span>e-PAN, verify PAN, e-Filing</span>
+</a>
 
-    <a class="card" href="https://www.pan.utiitsl.com/" target="_blank">
-      <div class="icon">💳</div>
-      <b>PAN Card</b>
-    </a>
+<a class="card" href="https://voters.eci.gov.in/" target="_blank">
+<div class="icon">🗳️</div>
+<b>Voter Services</b>
+<span>New voter, correction, e-EPIC</span>
+</a>
 
-    <a class="card" href="https://land.bihar.gov.in/" target="_blank">
-      <div class="icon">🏠</div>
-      <b>Bihar Land Record</b>
-    </a>
+<a class="card" href="https://www.digilocker.gov.in/" target="_blank">
+<div class="icon">📁</div>
+<b>DigiLocker</b>
+<span>Digital documents</span>
+</a>
 
-    <a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
-      <div class="icon">📄</div>
-      <b>Bihar Online</b>
-    </a>
+<a class="card" href="https://www.passportindia.gov.in/" target="_blank">
+<div class="icon">🛂</div>
+<b>Passport Seva</b>
+<span>Passport application & status</span>
+</a>
 
-    <a class="card" href="https://www.jpsc.gov.in/" target="_blank">
-      <div class="icon">🎓</div>
-      <b>Education</b>
-    </a>
+<a class="card" href="https://www.eci.gov.in/" target="_blank">
+<div class="icon">📋</div>
+<b>Election Commission</b>
+<span>Official information</span>
+</a>
 
-  </div>
+</div>
 
-  <div class="section-title" style="margin-top:25px;">
-    Other Services
-  </div>
+<h2 class="category">🏠 बिहार सरकारी सेवाएं</h2>
+<div class="grid">
 
-  <div class="grid">
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">📜</div>
+<b>Bihar ServicePlus / RTPS</b>
+<span>जाति, आय, निवास आदि</span>
+</a>
 
-    <a class="card" href="https://www.google.com/" target="_blank">
-      <div class="icon">🔍</div>
-      <b>Google</b>
-    </a>
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">🏠</div>
+<b>Bihar Bhumi</b>
+<span>जमाबंदी, दाखिल-खारिज, लगान</span>
+</a>
 
-    <a class="card" href="https://web.whatsapp.com/" target="_blank">
-      <div class="icon">💬</div>
-      <b>WhatsApp</b>
-    </a>
+<a class="card" href="https://biharbhumi.bihar.gov.in/BiharBhumi/" target="_blank">
+<div class="icon">📐</div>
+<b>Bhu-Naksha / Land</b>
+<span>भूमि और राजस्व सेवाएं</span>
+</a>
 
-  </div>
+<a class="card" href="https://www.bihar.gov.in/" target="_blank">
+<div class="icon">🏛️</div>
+<b>Bihar Government</b>
+<span>मुख्य सरकारी पोर्टल</span>
+</a>
+
+</div>
+
+<h2 class="category">🚗 वाहन और लाइसेंस</h2>
+<div class="grid">
+
+<a class="card" href="https://parivahan.gov.in/" target="_blank">
+<div class="icon">🚗</div>
+<b>Parivahan Sewa</b>
+<span>DL, RC, vehicle services</span>
+</a>
+
+<a class="card" href="https://sarathi.parivahan.gov.in/" target="_blank">
+<div class="icon">🪪</div>
+<b>Sarathi</b>
+<span>Driving Licence services</span>
+</a>
+
+<a class="card" href="https://vahan.parivahan.gov.in/" target="_blank">
+<div class="icon">🚘</div>
+<b>VAHAN</b>
+<span>Vehicle related services</span>
+</a>
+
+</div>
+
+<h2 class="category">🎓 शिक्षा</h2>
+<div class="grid">
+
+<a class="card" href="https://www.jpv.ac.in/" target="_blank">
+<div class="icon">🎓</div>
+<b>J.P. University</b>
+<span>Chapra university portal</span>
+</a>
+
+<a class="card" href="https://www.digilocker.gov.in/" target="_blank">
+<div class="icon">📜</div>
+<b>Digital Certificates</b>
+<span>Marksheets & certificates</span>
+</a>
+
+<a class="card" href="https://www.nta.ac.in/" target="_blank">
+<div class="icon">📝</div>
+<b>NTA</b>
+<span>Entrance examinations</span>
+</a>
+
+</div>
+
+<h2 class="category">💼 Business / Registration</h2>
+<div class="grid">
+
+<a class="card" href="https://www.udyamregistration.gov.in/" target="_blank">
+<div class="icon">🏢</div>
+<b>Udyam Registration</b>
+<span>MSME registration</span>
+</a>
+
+<a class="card" href="https://www.gst.gov.in/" target="_blank">
+<div class="icon">🧾</div>
+<b>GST Portal</b>
+<span>GST services</span>
+</a>
+
+<a class="card" href="https://www.incometax.gov.in/" target="_blank">
+<div class="icon">💰</div>
+<b>Income Tax</b>
+<span>Return & tax services</span>
+</a>
+
+</div>
+
+<h2 class="category">🖨️ Cyber Cafe Quick Tools</h2>
+<div class="grid">
+
+<a class="card" href="https://www.ilovepdf.com/" target="_blank">
+<div class="icon">📄</div>
+<b>PDF Tools</b>
+<span>Merge, split, compress PDF</span>
+</a>
+
+<a class="card" href="https://www.remove.bg/" target="_blank">
+<div class="icon">🖼️</div>
+<b>Background Remove</b>
+<span>Photo background tool</span>
+</a>
+
+<a class="card" href="https://www.photopea.com/" target="_blank">
+<div class="icon">🎨</div>
+<b>Photo Editor</b>
+<span>Browser image editing</span>
+</a>
+
+<a class="card" href="https://www.canva.com/" target="_blank">
+<div class="icon">🖌️</div>
+<b>Design / Poster</b>
+<span>Poster, banner & photo design</span>
+</a>
 
 </div>
 
 <footer>
-  © 2026 Nitya CSC<br>
-  Raipatti, Dighwara, Saran, Bihar
+Nitya Cyber Cafe • Raipatti, Dighwara, Saran, Bihar<br>
+Government portals are opened on their respective official websites.
 </footer>
+
+</div>
+
+<script>
+const search=document.getElementById('search');
+
+search.addEventListener('input',()=>{
+ const q=search.value.toLowerCase().trim();
+
+ document.querySelectorAll('.card').forEach(c=>{
+   c.classList.toggle(
+     'hidden',
+     q && !c.innerText.toLowerCase().includes(q)
+   );
+ });
+
+ document.querySelectorAll('.category').forEach(h=>{
+   let next=h.nextElementSibling;
+
+   let visible=next &&
+   [...next.querySelectorAll('.card')]
+   .some(c=>!c.classList.contains('hidden'));
+
+   h.classList.toggle('hidden',q && !visible);
+ });
+});
+</script>
 
 </body>
 </html>
