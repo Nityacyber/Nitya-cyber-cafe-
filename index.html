@@ -5,161 +5,377 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#075e54">
 <link rel="manifest" href="manifest.json">
-<title>Nitya CSC – Cyber Cafe Tools</title>
+<title>Nitya Cyber Cafe</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
-body{background:#f3f6fb;color:#202124}
-header{background:linear-gradient(135deg,#075e54,#0b806f);color:#fff;padding:22px 16px;border-radius:0 0 22px 22px}
-header h1{font-size:25px}
-header p{margin-top:6px;opacity:.9}
-.search{margin-top:16px;width:100%;padding:13px 15px;border:0;border-radius:12px;font-size:16px;outline:none}
-.container{padding:16px;max-width:900px;margin:auto}
-.notice{background:#fff3cd;border-left:5px solid #f0ad00;padding:12px;border-radius:10px;margin-bottom:16px;font-size:14px}
-.category{margin:20px 0 10px;font-size:19px;color:#075e54}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
-.card{background:#fff;border-radius:15px;padding:15px;box-shadow:0 2px 8px #00000012;text-decoration:none;color:#222;display:block;transition:.15s}
-.card:active{transform:scale(.97)}
-.icon{font-size:28px;margin-bottom:8px}
-.card b{display:block;font-size:16px}
-.card span{font-size:12px;color:#666;display:block;margin-top:4px}
-footer{text-align:center;color:#777;font-size:12px;padding:25px 10px}
-@media(min-width:650px){.grid{grid-template-columns:repeat(3,1fr)}}
-.hidden{display:none!important}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f3f6fb;
+  color:#202124;
+}
+
+header{
+  background:linear-gradient(135deg,#075e54,#0b806f);
+  color:white;
+  padding:22px 16px;
+  border-radius:0 0 22px 22px;
+}
+
+header h1{
+  font-size:25px;
+}
+
+header p{
+  margin-top:6px;
+  opacity:.9;
+}
+
+.search{
+  margin-top:16px;
+  width:100%;
+  padding:13px 15px;
+  border:0;
+  border-radius:12px;
+  font-size:16px;
+  outline:none;
+}
+
+.container{
+  padding:16px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.notice{
+  background:#fff3cd;
+  border-left:5px solid #f0ad00;
+  padding:12px;
+  border-radius:10px;
+  margin-bottom:18px;
+  font-size:14px;
+}
+
+.category{
+  margin:22px 0 11px;
+  font-size:19px;
+  color:#075e54;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:11px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:15px;
+  box-shadow:0 2px 8px #00000012;
+  text-decoration:none;
+  color:#222;
+  display:block;
+  transition:.15s;
+}
+
+.card:active{
+  transform:scale(.97);
+}
+
+.icon{
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.card b{
+  display:block;
+  font-size:16px;
+}
+
+.card span{
+  font-size:12px;
+  color:#666;
+  display:block;
+  margin-top:5px;
+  line-height:1.4;
+}
+
+footer{
+  text-align:center;
+  color:#777;
+  font-size:12px;
+  padding:28px 10px;
+  line-height:1.6;
+}
+
+.hidden{
+  display:none!important;
+}
+
+@media(min-width:650px){
+  .grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
+
 <h1>🖥️ Nitya Cyber Cafe</h1>
+
 <p>CSC • Online Forms • Government Services • Digital Tools</p>
-<input id="search" class="search" placeholder="🔎 Tool खोजें...">
+
+<input
+id="search"
+class="search"
+placeholder="🔎 Service खोजें..."
+>
+
 </header>
+
 
 <div class="container">
 
+
 <div class="notice">
-⚠️ सरकारी सेवाओं के लिए संबंधित <b>official portal</b> ही खुलेगा।
-OTP, Aadhaar, PAN या password इस app में सेव न करें।
+⚠️ सरकारी सेवाओं के लिए संबंधित
+<b>Official Portal</b> ही इस्तेमाल करें।
+OTP, Aadhaar, PAN या Password इस app में सेव न करें।
 </div>
 
+
+<!-- ================= IDENTIFICATION ================= -->
+
 <h2 class="category">🆔 पहचान और दस्तावेज</h2>
+
 <div class="grid">
 
 <a class="card" href="https://uidai.gov.in/" target="_blank">
 <div class="icon">🆔</div>
 <b>Aadhaar / UIDAI</b>
-<span>Download, update, status</span>
+<span>Aadhaar services, update और download</span>
 </a>
 
 <a class="card" href="https://www.incometax.gov.in/" target="_blank">
 <div class="icon">💳</div>
-<b>PAN / Income Tax</b>
-<span>e-PAN, verify PAN, e-Filing</span>
+<b>PAN Card</b>
+<span>PAN, e-PAN और Income Tax services</span>
 </a>
 
 <a class="card" href="https://voters.eci.gov.in/" target="_blank">
 <div class="icon">🗳️</div>
-<b>Voter Services</b>
-<span>New voter, correction, e-EPIC</span>
+<b>Voter ID</b>
+<span>New voter, correction और e-EPIC</span>
 </a>
 
 <a class="card" href="https://www.digilocker.gov.in/" target="_blank">
 <div class="icon">📁</div>
 <b>DigiLocker</b>
-<span>Digital documents</span>
+<span>Digital documents और certificates</span>
 </a>
 
 <a class="card" href="https://www.passportindia.gov.in/" target="_blank">
 <div class="icon">🛂</div>
 <b>Passport Seva</b>
-<span>Passport application & status</span>
+<span>Passport application और status</span>
 </a>
 
 <a class="card" href="https://www.eci.gov.in/" target="_blank">
 <div class="icon">📋</div>
 <b>Election Commission</b>
-<span>Official information</span>
+<span>Official election services</span>
 </a>
 
 </div>
 
-<h2 class="category">🏠 बिहार सरकारी सेवाएं</h2>
+
+<!-- ================= BIHAR RTPS ================= -->
+
+<h2 class="category">🏛️ बिहार RTPS / प्रमाण-पत्र</h2>
+
 <div class="grid">
 
 <a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
 <div class="icon">📜</div>
-<b>Bihar ServicePlus / RTPS</b>
-<span>जाति, आय, निवास आदि</span>
+<b>जाति प्रमाण-पत्र</b>
+<span>Caste Certificate – Bihar RTPS</span>
 </a>
 
-<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
-<div class="icon">🏠</div>
-<b>Bihar Bhumi</b>
-<span>जमाबंदी, दाखिल-खारिज, लगान</span>
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">💰</div>
+<b>आय प्रमाण-पत्र</b>
+<span>Income Certificate – Bihar RTPS</span>
 </a>
 
-<a class="card" href="https://biharbhumi.bihar.gov.in/BiharBhumi/" target="_blank">
-<div class="icon">📐</div>
-<b>Bhu-Naksha / Land</b>
-<span>भूमि और राजस्व सेवाएं</span>
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">🏡</div>
+<b>निवास प्रमाण-पत्र</b>
+<span>Residence Certificate – Bihar RTPS</span>
 </a>
 
-<a class="card" href="https://www.bihar.gov.in/" target="_blank">
-<div class="icon">🏛️</div>
-<b>Bihar Government</b>
-<span>मुख्य सरकारी पोर्टल</span>
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">👶</div>
+<b>जन्म प्रमाण-पत्र</b>
+<span>Birth Certificate / CRS</span>
+</a>
+
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">⚰️</div>
+<b>मृत्यु प्रमाण-पत्र</b>
+<span>Death Certificate / CRS</span>
+</a>
+
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">🛡️</div>
+<b>आचरण प्रमाण-पत्र</b>
+<span>Character Certificate</span>
+</a>
+
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">♿</div>
+<b>EWS प्रमाण-पत्र</b>
+<span>Economically Weaker Section</span>
+</a>
+
+<a class="card" href="https://serviceonline.bihar.gov.in/" target="_blank">
+<div class="icon">🔎</div>
+<b>RTPS Application Status</b>
+<span>आवेदन की स्थिति देखें</span>
 </a>
 
 </div>
 
-<h2 class="category">🚗 वाहन और लाइसेंस</h2>
+
+<!-- ================= BIHAR LAND ================= -->
+
+<h2 class="category">🌾 बिहार भूमि / जमीन सेवाएं</h2>
+
+<div class="grid">
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">📖</div>
+<b>जमाबंदी देखें</b>
+<span>Online Jamabandi Register</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">📑</div>
+<b>दाखिल-खारिज</b>
+<span>Mutation application और status</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">💵</div>
+<b>भू-लगान</b>
+<span>Online Land Revenue / Lagan</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">📜</div>
+<b>LPC आवेदन</b>
+<span>भूमि दखल-कब्जा प्रमाण-पत्र</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">🔍</div>
+<b>LPC Status</b>
+<span>LPC आवेदन की स्थिति</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">🔄</div>
+<b>Mutation Status</b>
+<span>दाखिल-खारिज आवेदन स्थिति</span>
+</a>
+
+<a class="card" href="https://bhunaksha.bihar.gov.in/index.jsp" target="_blank">
+<div class="icon">🗺️</div>
+<b>भू-नक्शा</b>
+<span>Plot और cadastral map देखें</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">✏️</div>
+<b>परिमार्जन Plus</b>
+<span>Digitized Jamabandi correction</span>
+</a>
+
+<a class="card" href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank">
+<div class="icon">📱</div>
+<b>मोबाइल / Aadhaar Seeding</b>
+<span>Seeding status और services</span>
+</a>
+
+</div>
+
+
+<!-- ================= VEHICLE ================= -->
+
+<h2 class="category">🚗 वाहन और ड्राइविंग लाइसेंस</h2>
+
 <div class="grid">
 
 <a class="card" href="https://parivahan.gov.in/" target="_blank">
 <div class="icon">🚗</div>
 <b>Parivahan Sewa</b>
-<span>DL, RC, vehicle services</span>
+<span>Vehicle और transport services</span>
 </a>
 
 <a class="card" href="https://sarathi.parivahan.gov.in/" target="_blank">
 <div class="icon">🪪</div>
-<b>Sarathi</b>
-<span>Driving Licence services</span>
+<b>Driving Licence</b>
+<span>DL application और services</span>
 </a>
 
 <a class="card" href="https://vahan.parivahan.gov.in/" target="_blank">
 <div class="icon">🚘</div>
 <b>VAHAN</b>
-<span>Vehicle related services</span>
+<span>RC और vehicle services</span>
 </a>
 
 </div>
 
-<h2 class="category">🎓 शिक्षा</h2>
+
+<!-- ================= EDUCATION ================= -->
+
+<h2 class="category">🎓 शिक्षा और परीक्षा</h2>
+
 <div class="grid">
 
 <a class="card" href="https://www.jpv.ac.in/" target="_blank">
 <div class="icon">🎓</div>
 <b>J.P. University</b>
-<span>Chapra university portal</span>
+<span>JPU Chapra official portal</span>
 </a>
 
 <a class="card" href="https://www.digilocker.gov.in/" target="_blank">
 <div class="icon">📜</div>
-<b>Digital Certificates</b>
-<span>Marksheets & certificates</span>
+<b>Digital Marksheet</b>
+<span>Marksheets और certificates</span>
 </a>
 
 <a class="card" href="https://www.nta.ac.in/" target="_blank">
 <div class="icon">📝</div>
 <b>NTA</b>
-<span>Entrance examinations</span>
+<span>Entrance examination services</span>
 </a>
 
 </div>
 
+
+<!-- ================= BUSINESS ================= -->
+
 <h2 class="category">💼 Business / Registration</h2>
+
 <div class="grid">
 
 <a class="card" href="https://www.udyamregistration.gov.in/" target="_blank">
@@ -171,76 +387,104 @@ OTP, Aadhaar, PAN या password इस app में सेव न करे�
 <a class="card" href="https://www.gst.gov.in/" target="_blank">
 <div class="icon">🧾</div>
 <b>GST Portal</b>
-<span>GST services</span>
+<span>GST registration और services</span>
 </a>
 
 <a class="card" href="https://www.incometax.gov.in/" target="_blank">
 <div class="icon">💰</div>
 <b>Income Tax</b>
-<span>Return & tax services</span>
+<span>ITR और tax services</span>
 </a>
 
 </div>
 
+
+<!-- ================= QUICK TOOLS ================= -->
+
 <h2 class="category">🖨️ Cyber Cafe Quick Tools</h2>
+
 <div class="grid">
 
 <a class="card" href="https://www.ilovepdf.com/" target="_blank">
 <div class="icon">📄</div>
 <b>PDF Tools</b>
-<span>Merge, split, compress PDF</span>
+<span>Merge, Split, Compress PDF</span>
 </a>
 
 <a class="card" href="https://www.remove.bg/" target="_blank">
 <div class="icon">🖼️</div>
 <b>Background Remove</b>
-<span>Photo background tool</span>
+<span>Photo background हटाएं</span>
 </a>
 
 <a class="card" href="https://www.photopea.com/" target="_blank">
 <div class="icon">🎨</div>
 <b>Photo Editor</b>
-<span>Browser image editing</span>
+<span>Online image editing</span>
 </a>
 
 <a class="card" href="https://www.canva.com/" target="_blank">
 <div class="icon">🖌️</div>
-<b>Design / Poster</b>
-<span>Poster, banner & photo design</span>
+<b>Poster / Banner Design</b>
+<span>Poster, banner और graphics</span>
 </a>
 
 </div>
 
+
 <footer>
-Nitya Cyber Cafe • Raipatti, Dighwara, Saran, Bihar<br>
-Government portals are opened on their respective official websites.
+
+<b>Nitya Cyber Cafe</b><br>
+Raipatti, Dighwara, Saran, Bihar<br>
+CSC • Online Services • Digital Work
+
 </footer>
 
 </div>
 
+
 <script>
-const search=document.getElementById('search');
 
-search.addEventListener('input',()=>{
- const q=search.value.toLowerCase().trim();
+const search=document.getElementById("search");
 
- document.querySelectorAll('.card').forEach(c=>{
-   c.classList.toggle(
-     'hidden',
-     q && !c.innerText.toLowerCase().includes(q)
-   );
- });
+search.addEventListener("input",function(){
 
- document.querySelectorAll('.category').forEach(h=>{
-   let next=h.nextElementSibling;
+let q=this.value.toLowerCase().trim();
 
-   let visible=next &&
-   [...next.querySelectorAll('.card')]
-   .some(c=>!c.classList.contains('hidden'));
+document.querySelectorAll(".card").forEach(function(card){
 
-   h.classList.toggle('hidden',q && !visible);
- });
+let text=card.innerText.toLowerCase();
+
+if(q && !text.includes(q)){
+card.classList.add("hidden");
+}else{
+card.classList.remove("hidden");
+}
+
 });
+
+document.querySelectorAll(".category").forEach(function(category){
+
+let grid=category.nextElementSibling;
+
+if(!grid) return;
+
+let cards=grid.querySelectorAll(".card");
+
+let visible=[...cards].some(function(card){
+return !card.classList.contains("hidden");
+});
+
+if(q && !visible){
+category.classList.add("hidden");
+}else{
+category.classList.remove("hidden");
+}
+
+});
+
+});
+
 </script>
 
 </body>
